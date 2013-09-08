@@ -43,6 +43,11 @@ amqp_username = guest
 amqp_password = guest
 amqp_virtualhost = /
 
+# HTTP
+http_enabled = <%= node[:graylog2][:http][:enabled] %> 
+http_listen_address = <%= node[:graylog2][:http][:address] %>
+http_listen_port = <%= node[:graylog2][:http][:port] %>
+
 # Forwarders
 # Timeout in seconds for each connection and read of Logg.ly API when forwarding messages. Default: 3
 forwarder_loggly_timeout = 3

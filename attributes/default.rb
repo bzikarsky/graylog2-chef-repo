@@ -16,6 +16,10 @@ default[:graylog2][:mongodb][:auth] = "false"
 default[:graylog2][:mongodb][:user] = "user"
 default[:graylog2][:mongodb][:password] = "password"
 
+default[:graylog2][:http][:enabled] = "false"
+default[:graylog2][:http][:address] = "127.0.0.1"
+default[:graylog2][:http][:port] = "12202"
+
 default[:graylog2][:protocol] = "udp"
 default[:graylog2][:port] = 514
 default[:graylog2][:gelf_port] = 12201
